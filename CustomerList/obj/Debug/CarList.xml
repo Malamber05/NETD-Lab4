@@ -1,0 +1,214 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CarList
+</name>
+</assembly>
+<members>
+<member name="T:CarList.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CarList.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CarList.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:CarList.Car.#ctor">
+ <summary>
+ Constructor - Default - creates a new Car object
+ </summary>
+</member>
+<member name="M:CarList.Car.#ctor(System.String,System.String,System.String,System.Boolean,System.String)">
+ <summary>
+ Constructor - Parameterized - creates a new car object
+ </summary>
+ <param name="Make"></param>
+ <param name="Model"></param>
+ <param name="Year"></param>
+ <param name="IsNew"></param>
+ <param name="Price"></param>
+</member>
+<member name="P:CarList.Car.Count">
+ <summary>
+ Count ReadOnly Property - Gets the number of customers that have been instantiated/created
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:CarList.Car.IdentificationNumber">
+ <summary>
+ IdentificationNumber ReadOnly Property - Gets a specific cars identification number
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:CarList.Car.IsNew">
+ <summary>
+ VeryImportantPersonStatus Property - >Gets and Sets if the car is new or not
+ </summary>
+ <returns>Boolean</returns>
+</member>
+<member name="P:CarList.Car.Make">
+ <summary>
+ Title property - Gets and Sets the Make of the car
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:CarList.Car.Model">
+ <summary>
+ Title property - Gets and Sets the Model of the car
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:CarList.Car.Year">
+ <summary>
+ FirstName property - Gets and Sets the Year of the car 
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:CarList.Car.Price">
+ <summary>
+ LastName property - Gets and Sets the Price of the car 
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="M:CarList.Car.GetSalutation">
+ <summary>
+ GetSalutation is a function that a salutation based on the private properties within the class scope
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="M:CarList.Customer.#ctor">
+ <summary>
+ Constructor - Default - creates a new customer object
+ </summary>
+</member>
+<member name="M:CarList.Customer.#ctor(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Constructor - Parameterized - creates a new customer object
+ </summary>
+ <param name="title"></param>
+ <param name="firstName"></param>
+ <param name="lastName"></param>
+ <param name="veryImportantPersonStatus"></param>
+</member>
+<member name="P:CarList.Customer.Count">
+ <summary>
+ Count ReadOnly Property - Gets the number of customers that have been instantiated/created
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:CarList.Customer.IdentificationNumber">
+ <summary>
+ IdentificationNumber ReadOnly Property - Gets a specific customers identification number
+ </summary>
+ <returns>Integer</returns>
+</member>
+<member name="P:CarList.Customer.VeryImportantPersonStatus">
+ <summary>
+ VeryImportantPersonStatus Property - >Gets and Sets the Very Important Person status of a customer
+ </summary>
+ <returns>Boolean</returns>
+</member>
+<member name="P:CarList.Customer.Title">
+ <summary>
+ Title property - Gets and Sets the title of a customer
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:CarList.Customer.FirstName">
+ <summary>
+ FirstName property - Gets and Sets the first name of a customer
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="P:CarList.Customer.LastName">
+ <summary>
+ LastName property - Gets and Sets the last name of a customer
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="M:CarList.Customer.GetSalutation">
+ <summary>
+ GetSalutation is a function that a salutation based on the private properties within the class scope
+ </summary>
+ <returns>String</returns>
+</member>
+<member name="T:CarList.frmCarList">
+ <summary>
+ Author Name:    Alex Blizzard
+ Project Name:   CarList
+ Date:           15-Mar-2019
+ Description     Application that will let the user enter Car informaton and put it into a table, which can later be edited.
+                 The car can be listed as New or Used, and also the Price can be stated. If wanted, the already existing cars in the list
+                 can be edited by selecting it form the list view and modified to the users pleasure and then it is saved.
+                 The price is validated, making sure that the number is actually a number, or is not left blank. Using Regular Expressions
+                 After the number is validated, the price is put into the format; if not already put in by the user. (2 decimal places,
+                 and a number sign at the beginning.
+ </summary>
+</member>
+<member name="M:CarList.frmCarList.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ btnEnter_Click - Will validate that the data entered into the controls is appropriate.
+                - Once the data is validated a customer object will be create using the  
+                - parameterized constructor. It will also insert the new Car object
+                - into the CarList collection. It will also check to see if the data in
+                - the controls has been selected from the listview by the user. In that case
+                - it will need to update the data in the specific Car object and the 
+                - listview as well.
+ </summary>
+ <param name="sender">Object</param>
+ <param name="e">EventArgs</param>
+</member>
+<member name="M:CarList.frmCarList.Reset">
+ <summary>
+ Reset - set the controls back to their default state.
+ </summary>
+</member>
+<member name="M:CarList.frmCarList.IsValidInput">
+ <summary>
+ IsValidInput - validates the data in each control to ensure that the user has entered apprpriate values
+ </summary>
+ <returns>Boolean</returns>
+</member>
+<member name="M:CarList.frmCarList.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ Event is declared as private because it is only accessible within the form
+ The code in the btnReset_Click EventHandler will clear the form and set
+ focus back to the input text box. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CarList.frmCarList.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ Event is declared as private because it is only accessible within the form
+ The code in the btnExit_Click EventHandler will close the application
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CarList.frmCarList.lvwCustomers_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+ <summary>
+ lvwCustomers_ItemCheck - used to prevent the user from checking the check box in the list view
+                        - if it is not in edit mode
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CarList.frmCarList.lvwCustomers_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ lvwCustomers_SelectedIndexChanged - when the user selected a row in the list it will populate the fields for editing
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>

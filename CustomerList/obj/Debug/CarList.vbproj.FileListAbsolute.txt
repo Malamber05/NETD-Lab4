@@ -1,0 +1,12 @@
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.Resources.resources
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.vbproj.GenerateResource.cache
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.vbproj.CoreCompileInputs.cache
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.exe
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.xml
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.pdb
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\bin\Debug\CarList.exe.config
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\bin\Debug\CarList.exe
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\bin\Debug\CarList.pdb
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\bin\Debug\CarList.xml
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.vbprojAssemblyReference.cache
+C:\Users\alexb\Desktop\NETD Lab 4\CustomerList\CustomerList\obj\Debug\CarList.frmCarList.resources
